@@ -41,6 +41,28 @@ public class Figures {
 	}
 	
 	
+	public static Punto centroMasas(Figures... figs) {
+		double centroMasaX1= 0;
+		double centroMasaArea = 0;
+		double centroMasaX = 0;
+		double centroMasaY= 0;
+		double centroMasaY1= 0;
+		
+		for(int i = 0; i < figs.length; i++) {
+			centroMasaX1 += figs[i].calculaArea() * figs[i].getX();
+			centroMasaY1 += figs[i].calculaArea()*figs[i].getY();
+			centroMasaArea += figs[i].calculaArea();
+		}
+		centroMasaX = Math.round(centroMasaX1 / centroMasaArea);
+		
+		centroMasaY = Math.round(centroMasaY1 /centroMasaArea);
+		
+		
+		return new Punto(centroMasaX, centroMasaY);
+		
+	}
+	
+	
 
 	
 	public boolean equals(Object otro) {

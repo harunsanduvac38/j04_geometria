@@ -6,52 +6,52 @@ import modelo.Rectangulo;
 
 public class Punto extends Figures{
 	
+	private double x;
+	private double y;
+	
+	public Punto() {}
+	
 	public Punto(double x, double y) {
-		super(x,y);
+		this.x=x;
+		this.y=y;
 	}
 	
 
 	
-	public static Punto centroMasas(Figures... figs) {
-		double centroMasaX1= 0;
-		double centroMasaX2 = 0;
-		double centroMasaX = 0;
-		for(int i = 0; i < figs.length; i++) {
-			centroMasaX1 += figs[i].calculaArea() * figs[i].getX();
-			centroMasaX2 += figs[i].calculaArea();
-		}
-		centroMasaX = centroMasaX1 / centroMasaX2;
-		
-		
-		double centroMasaY= 0;
-		double centroMasaY1= 0;
-		double centroMasaY2= 0;
-		for(int i = 0; i<figs.length;i++) {
-			centroMasaY1 += figs[i].calculaArea()*figs[i].getY();
-			centroMasaY2 += figs[i].calculaArea();
-			
-		}
-		centroMasaY = centroMasaY1 /centroMasaY2;
-		
-		
-		
-		return new Punto(centroMasaX, centroMasaY);
-		
+	public double getX() {
+		return x;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	public void setY(double y) {
+		this.y = y;
+	}
+
 	
+	
+	public boolean equals(Object otro) {
+		if(otro ==null) return false;
+		if(this==otro) return true;
+		if(this.getClass() != otro.getClass()) return false;
+		Punto otra = (Punto) otro;
+		return this.x == otra.x && this.y ==y;
+		
+	}
+	
+	@Override
+	public String toString() {
+		return "Punto (" + x + ", " + y + ")";
 	}
 	
 	
-	public static void main(String[] args) {
-		
-		Figures f1 = new Rectangulo(1,2,3,4);
-		Figures f2 = new Rectangulo(1,2,3,4);
-		Figures f3 = new Circulo(1,2,5);
-		Figures f4 = new Circulo(5, 6, 20);
-		
-		Figures[] figss = {f1, f2};
-		
-		System.out.println(centroMasas(figss));
-	}
+
 	
 	
 	

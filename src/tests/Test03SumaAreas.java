@@ -29,12 +29,10 @@ public class Test03SumaAreas {
 		
 		System.out.println(sumAreas(figss));
 		
-		
+
 		
 		
 	}
-		
-		
 	
 	
 	
