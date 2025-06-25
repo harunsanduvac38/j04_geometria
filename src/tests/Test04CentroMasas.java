@@ -16,7 +16,7 @@ public class Test04CentroMasas {
 		System.out.println(centroMasa);
 		
 		Punto centro = Figures.centroMasas(r1,r2);
-		System.out.println(centro);
+		System.out.println("Centro masa: " + centro);
 		
 	}
 }
