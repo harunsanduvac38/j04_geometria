@@ -10,7 +10,7 @@ public class Test04CentroMasas {
 		Rectangulo r1 = new Rectangulo(1,2,4,6);
 		Rectangulo r2 = new Rectangulo(24,5,6,7);
 		Circulo c1 = new Circulo(3,6,7);
-		Circulo c2 = new Circulo(-34,-6, 54);
+		Circulo c2 = new Circulo(-34,-6, 5);
 		
 		Punto centroMasa = Figures.centroMasas(r1,r2,c1,c2);
 		System.out.println(centroMasa);

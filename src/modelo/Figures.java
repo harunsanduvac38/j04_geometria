@@ -53,9 +53,9 @@ public class Figures {
 			centroMasaY1 += figs[i].calculaArea()*figs[i].getY();
 			centroMasaArea += figs[i].calculaArea();
 		}
-		centroMasaX = Math.round(centroMasaX1 / centroMasaArea);
+		centroMasaX = centroMasaX1 / centroMasaArea;
 		
-		centroMasaY = Math.round(centroMasaY1 /centroMasaArea);
+		centroMasaY = centroMasaY1 /centroMasaArea;
 		
 		
 		return new Punto(centroMasaX, centroMasaY);
