@@ -8,9 +8,9 @@ public class Test01 {
 	
 	public static void main(String[] args) {
 		
-		Figures f = new Figures();
 		
-		System.out.println(f);
+		
+		
 		
 		Rectangulo r = new Rectangulo (1.5, 4, 10,6);
 		System.out.println("Area: " + r.calculaArea());

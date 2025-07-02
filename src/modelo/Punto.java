@@ -4,7 +4,7 @@ import modelo.Circulo;
 import modelo.Rectangulo;
 
 
-public class Punto extends Figures{
+public class Punto extends Figures implements Dibujable{
 	
 	private double x;
 	private double y;
@@ -48,6 +48,23 @@ public class Punto extends Figures{
 	@Override
 	public String toString() {
 		return "Punto (" + x + ", " + y + ")";
+	}
+
+	@Override
+	public double calculaArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double calculaPerimetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void dibujar() {
+		System.out.println("dibujando el punto");
 	}
 	
 	

@@ -1,6 +1,6 @@
 package modelo;
 
-public class Figures {
+public abstract class  Figures {
 	
 	private double x;
 	private double y;
@@ -31,14 +31,10 @@ public class Figures {
 	}
 	
 	
-	public double calculaArea() {
-		return 0;
-	}
+	public abstract double calculaArea();
 	
 	
-	public double calculaPerimetro () {
-		return 0;
-	}
+	public abstract  double calculaPerimetro();
 	
 	
 	public static Punto centroMasas(Figures... figs) {
