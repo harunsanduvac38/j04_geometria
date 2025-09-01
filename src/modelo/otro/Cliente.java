@@ -1,7 +1,7 @@
 package modelo.otro;
 
 import modelo.Dibujable;
-import modelo.Figures;
+import modelo.Figura;
 
 public class Cliente implements Dibujable {
 	

@@ -1,16 +1,16 @@
 package modelo;
 
-public abstract class  Figures {
+public abstract class  Figura {
 	
 	private double x;
 	private double y;
 	
-	public Figures(double x, double y) {
+	public Figura(double x, double y) {
 		this.x=x;
 		this.y=y;
 	}
 	
-	public Figures() {}
+	public Figura() {}
 	
 	
 	public double getX() {
@@ -37,7 +37,7 @@ public abstract class  Figures {
 	public abstract  double calculaPerimetro();
 	
 	
-	public static Punto centroMasas(Figures... figs) {
+	public static Punto centroMasas(Figura... figs) {
 		double centroMasaX1= 0;
 		double centroMasaArea = 0;
 		double centroMasaX = 0;
@@ -65,7 +65,7 @@ public abstract class  Figures {
 		if(otro==null) return false;
 		if(this==otro) return true;
 		if(this.getClass() != otro.getClass()) return false;
-		Figures otra = (Figures) otro;
+		Figura otra = (Figura) otro;
 		return this.x == otra.x &&this.y ==y;
 	}
 	

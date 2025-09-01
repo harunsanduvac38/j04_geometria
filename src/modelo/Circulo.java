@@ -1,6 +1,6 @@
 package modelo;
 
-public class Circulo extends Figures implements Dibujable{
+public class Circulo extends Figura implements Dibujable{
 	
 	private double radio;
 	

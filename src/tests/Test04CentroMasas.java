@@ -1,7 +1,7 @@
 package tests;
 import modelo.Rectangulo;
 import modelo.Circulo;
-import modelo.Figures;
+import modelo.Figura;
 import modelo.Punto;
 
 public class Test04CentroMasas {
@@ -12,10 +12,10 @@ public class Test04CentroMasas {
 		Circulo c1 = new Circulo(3,6,7);
 		Circulo c2 = new Circulo(-34,-6, 5);
 		
-		Punto centroMasa = Figures.centroMasas(r1,r2,c1,c2);
+		Punto centroMasa = Figura.centroMasas(r1,r2,c1,c2);
 		System.out.println(centroMasa);
 		
-		Punto centro = Figures.centroMasas(r1,r2);
+		Punto centro = Figura.centroMasas(r1,r2);
 		System.out.println("Centro masa: " + centro);
 		
 	}

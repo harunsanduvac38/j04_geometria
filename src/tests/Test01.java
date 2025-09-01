@@ -1,5 +1,5 @@
 package tests;
-import modelo.Figures;
+import modelo.Figura;
 import modelo.Circulo;
 import modelo.Rectangulo;
 
@@ -32,7 +32,7 @@ public class Test01 {
 		System.out.println(cir.equals(cir2));
 		
 		
-		Figures f2 = cir;
+		Figura f2 = cir;
 		
 		System.out.println("class f2: " + f2.getClass());
 	}

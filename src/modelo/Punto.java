@@ -1,10 +1,10 @@
 package modelo;
-import modelo.Figures;
+import modelo.Figura;
 import modelo.Circulo;
 import modelo.Rectangulo;
 
 
-public class Punto extends Figures implements Dibujable{
+public class Punto extends Figura implements Dibujable{
 	
 	private double x;
 	private double y;

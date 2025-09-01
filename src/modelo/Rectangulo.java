@@ -1,6 +1,6 @@
 package modelo;
 
-public class Rectangulo extends Figures {
+public class Rectangulo extends Figura {
 	
 	public Rectangulo(double x, double y, double lado1, double lado2) {
 		super(x,y);
